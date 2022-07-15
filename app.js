@@ -538,10 +538,6 @@ function restartGame(){
         game = setInterval(gameLoop, 75);    
         scoreDisplay.innerHTML = score
         instruction.innerHTML = ""
-        console.log(mp.gameWonMusicPlaying)
-        console.log(mp.gameWonMusicPlaying === true)
-        console.log(mp.mapClearedMusicPlaying)
-        console.log(mp.mapClearedMusicPlaying === true)
         
         if (mp.gameWonMusicPlaying){
             mp.stopGameWonMusic()
@@ -1264,7 +1260,3 @@ const maps = [Map1,Map2,Map3, Map4, Map5, Map6, Map7, Map8, Map9,Map10]
 createBoard() 
 document.addEventListener('keydown', controller);
 document.addEventListener('keyup', e => { if(e.keyCode >= 37 && e.keyCode <= 40){moveKeysCurrentlyPressed[e.keyCode-37] = false}})
-
-//console.log(JSON.parse('./map1.json'))
-
-//to 14 last day - finished, 10 maps and up on github/netlify
