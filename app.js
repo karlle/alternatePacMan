@@ -1258,7 +1258,6 @@ const Map10 = {
 }
 
 
-currentMapIndex = 7
 const maps = [Map1,Map2,Map3, Map4, Map5, Map6, Map7, Map8, Map9,Map10] 
 
 //start the game 
